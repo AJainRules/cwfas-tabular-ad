@@ -14,14 +14,7 @@ A reproducible internal benchmark of **Consensus-Weighted Feature-Augmented Stac
 
 - [Overview](#overview)
 - [Dataset](#dataset)
-- [Repository Structure](#repository-structure)
 - [Installation](#installation)
-- [Usage](#usage)
-- [Results](#results)
-- [Ablation Study](#ablation-study)
-- [Reproducibility](#reproducibility)
-- [Citation](#citation)
-- [License](#license)
 
 ---
 
@@ -52,3 +45,28 @@ All metrics are computed from a **single frozen prediction file** (`predictions_
 **Automatic download:** The notebook downloads the dataset via `kagglehub.dataset_download()` — no API token required.
 
 ---
+
+
+---
+
+## Installation
+
+### Option 1: Google Colab (Recommended)
+
+Open `cwfas_ad_classification.ipynb` directly in [Google Colab](https://colab.research.google.com/). All dependencies install automatically in Cell 1.
+
+### Option 2: Local Environment
+
+```bash
+# Clone repository
+git clone https://github.com/<your-username>/cwfas-tabular-ad.git
+cd cwfas-tabular-ad
+
+# Create environment
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+
